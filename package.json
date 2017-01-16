@@ -1,6 +1,7 @@
 {
   "name": "FFCSonTheGo",
   "description": "FFCS course registration made hassle free for VITians",
+  "author": "Vatsal Joshi <vatz88@gmail.com>",
   "version": "0.0.2",
   "private": true,
   "scripts": {
@@ -15,7 +16,6 @@
     "type": "git",
     "url": "git+https://github.com/VaTz88/FFCSonTheGo.git"
   },
-  "author": "Vatsal Joshi",
   "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/VaTz88/FFCSonTheGo/issues"
