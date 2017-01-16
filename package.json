@@ -1,11 +1,16 @@
 {
-  "name": "ffcs-on-the-go",
+  "name": "FFCSonTheGo",
   "description": "FFCS course registration made hassle free for VITians",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "scripts": {
-    "start": "nodejs ./bin/www"
+    "start": "node ./bin/www"
   },
+  "contributors": [{
+    "name": "Vatsal Joshi",
+    "email": "vatz88@gmail.com"
+  }],
+  "main": "./app.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/VaTz88/FFCSonTheGo.git"
@@ -16,6 +21,9 @@
     "url": "https://github.com/VaTz88/FFCSonTheGo/issues"
   },
   "homepage": "https://github.com/VaTz88/FFCSonTheGo#readme",
+  "engines": {
+    "node": ">=0.6.14"
+  },
   "dependencies": {
     "express": "~4.0.0",
     "static-favicon": "~1.0.0",

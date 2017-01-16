@@ -2,14 +2,13 @@
 1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'start' ]
 2 info using npm@3.5.2
 3 info using node@v4.2.6
-4 verbose stack Error: Invalid version: "0.1"
-4 verbose stack     at Object.module.exports.fixVersionField (/usr/share/npm/node_modules/normalize-package-data/lib/fixer.js:191:13)
-4 verbose stack     at /usr/share/npm/node_modules/normalize-package-data/lib/normalize.js:32:38
-4 verbose stack     at Array.forEach (native)
-4 verbose stack     at normalize (/usr/share/npm/node_modules/normalize-package-data/lib/normalize.js:31:15)
-4 verbose stack     at final (/usr/share/npm/node_modules/read-package-json/read-json.js:338:5)
-4 verbose stack     at then (/usr/share/npm/node_modules/read-package-json/read-json.js:113:5)
-4 verbose stack     at /usr/share/npm/node_modules/read-package-json/read-json.js:300:12
+4 verbose stack Error: Failed to parse json
+4 verbose stack Unexpected token '/' at 6:3
+4 verbose stack   // "scripts": {
+4 verbose stack   ^
+4 verbose stack     at parseError (/usr/share/npm/node_modules/read-package-json/read-json.js:379:11)
+4 verbose stack     at parseJson (/usr/share/npm/node_modules/read-package-json/read-json.js:68:23)
+4 verbose stack     at /usr/share/npm/node_modules/read-package-json/read-json.js:48:5
 4 verbose stack     at /usr/share/npm/node_modules/graceful-fs/graceful-fs.js:76:16
 4 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:380:3)
 5 verbose cwd /media/vatz88/DATA/GitHub/FFCSonTheGo
@@ -17,7 +16,16 @@
 7 error argv "/usr/bin/nodejs" "/usr/bin/npm" "start"
 8 error node v4.2.6
 9 error npm  v3.5.2
-10 error Invalid version: "0.1"
-11 error If you need help, you may report this error at:
-11 error     <https://github.com/npm/npm/issues>
-12 verbose exit [ 1, true ]
+10 error file /media/vatz88/DATA/GitHub/FFCSonTheGo/package.json
+11 error code EJSONPARSE
+12 error Failed to parse json
+12 error Unexpected token '/' at 6:3
+12 error   // "scripts": {
+12 error   ^
+13 error File: /media/vatz88/DATA/GitHub/FFCSonTheGo/package.json
+14 error Failed to parse package.json data.
+14 error package.json must be actual JSON, not just JavaScript.
+14 error
+14 error This is not a bug in npm.
+14 error Tell the package author to fix their package.json file. JSON.parse
+15 verbose exit [ 1, true ]
